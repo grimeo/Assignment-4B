@@ -17,10 +17,13 @@ def getInputs():
 
     return apples_quantity, orange_quantity
 
-def solve():
+def solve(aq, oq): #aq = apple quantity, oq = orange quantity
     if apples_quantity < 0 or orange_quantity < 0:
         print("Quantity cannot be less than zero")
     else :
         apple_Amount = apples_quantity * apple_Price
         orange_Amount = orange_quantity * orange_Price
         print("The total amount is: " + str(apple_Amount + orange_Amount))
+
+AQ, OQ = getInputs()
+solve(AQ, OQ)
